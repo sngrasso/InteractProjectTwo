@@ -1,0 +1,3 @@
+ID,StateName,ClassName,PNGFilename,CollisionFilename
+0,Start,PNGRoom,assets/BedRoom.png,
+1,Room1,PNGRoom,assets/Park.png,

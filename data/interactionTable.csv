@@ -1,0 +1,3 @@
+CurrentState,KeyTyped,KeyCode,MouseEvent,ClickableName,MapDirection,NextState
+Start,,,,,E,Room1
+Room1,,,,,W,Start
