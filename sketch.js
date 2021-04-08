@@ -42,7 +42,8 @@ function setup() {
     playerSprite = createSprite(width/2, height/2, 80, 80);
 
     // every animation needs a descriptor, since we aren't switching animations, this string value doesn't matter
-    playerSprite.addAnimation('regular', loadAnimation('assets/avatars/scout-01.png', 'assets/avatars/scout-04.png'));
+    playerSprite.addAnimation('regular', loadAnimation('assets/avatars/ScoutSpriteRest-01.png', 'assets/avatars/ScoutSpriteRest-04.png'));
+    playerSprite.addAnimation('moving', loadAnimation('assets/avatars/ScoutSprite-01.png', 'assets/avatars/ScoutSprite-04.png'));
 
 
     // use this to track movement from toom to room in adventureManager.draw()
@@ -103,19 +104,33 @@ function mouseReleased() {
 
 //-------------- YOUR SPRITE MOVEMENT CODE HERE  ---------------//
 function moveSprite() {
-    if(keyIsDown(RIGHT_ARROW))
+    if(keyIsDown(RIGHT_ARROW)) {
+        playerSprite.changeAnimation('moving');
         playerSprite.velocity.x = 10;
-    else if(keyIsDown(LEFT_ARROW))
+        return;
+    }
+    else if(keyIsDown(LEFT_ARROW)) {
+        playerSprite.changeAnimation('moving');
         playerSprite.velocity.x = -10;
-    else
+        return;
+    }
+    else {
+        playerSprite.changeAnimation('regular');
         playerSprite.velocity.x = 0;
+    }
 
-    if(keyIsDown(DOWN_ARROW))
+    if(keyIsDown(DOWN_ARROW)){
+        playerSprite.changeAnimation('moving');
         playerSprite.velocity.y = 10;
-    else if(keyIsDown(UP_ARROW))
+    }
+    else if(keyIsDown(UP_ARROW)) {
+        playerSprite.changeAnimation('moving');
         playerSprite.velocity.y = -10;
-    else
+    }
+    else {
+        playerSprite.changeAnimation('regular');
         playerSprite.velocity.y = 0;
+    }
 }
 
 //-------------- CLICKABLE CODE  ---------------//

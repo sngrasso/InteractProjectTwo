@@ -1,3 +1,11 @@
 ID,StateName,ClassName,PNGFilename,CollisionFilename
 0,Start,PNGRoom,assets/BedRoom.png,
-1,Room1,PNGRoom,assets/Park.png,
+1,FrontYard,PNGRoom,assets/FrontYard.png,
+2,ParkEntrance,PNGRoom,assets/ParkEntrance.png,
+3,ParkCenter,PNGRoom,assets/ParkCenter.png,
+4,ParkUpperLeft,PNGRoom,assets/ParkUpperLeft.png,
+5,ParkLowerLeft,PNGRoom,assets/ParkLowerLeft.png,
+6,ParkUpperRight,PNGRoom,assets/ParkUpperRight.png,
+7,ParkLowerRight,PNGRoom,assets/ParkLowerRight.png,
+8,ParkBottom,PNGRoom,assets/ParkBottom.png,
+9,PollingPlace,PNGRoom,assets/PollingPlace.png,
