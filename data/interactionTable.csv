@@ -1,6 +1,7 @@
 CurrentState,KeyTyped,KeyCode,MouseEvent,ClickableName,MapDirection,NextState
-Start,,,,,S,FrontYard
-FrontYard,,,,,N,Start
+Intro,,,,StartGame,,Start
+Start,,,,,E,FrontYard
+FrontYard,a,,,StartGame,,Start
 FrontYard,,,,,S,ParkEntrance
 ParkEntrance,,,,,N,FrontYard
 ParkEntrance,,,,,S,ParkCenter
