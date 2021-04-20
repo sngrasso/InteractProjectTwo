@@ -280,8 +280,8 @@ function talkNPC() {
 
 // drawLayers():
 function drawLayers() {
-    if (adventureManager.getStateName() === "ParkEntrance" ||
-        adventureManager.getStateName() === "ParkCenter"  && !hideArch) {
+    if ((adventureManager.getStateName() === "ParkEntrance" ||
+        adventureManager.getStateName() === "ParkCenter" ) && !hideArch) {
         image(img[0],0,0)
     }
     if (textBox.panel != null && textBox.dialogue != null){
@@ -593,7 +593,6 @@ class BedScreen extends PickupItem {
             conversationIndex = 0;
         }
     }
-
 }
 
 //-------------- POLLING END EVENT SUBCLASSES / YOUR DRAW CODE CAN GO HERE ---------------//
