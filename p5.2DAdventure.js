@@ -65,8 +65,6 @@ class AdventureManager {
             this.hasValidStates = false;
         }
 
-        
-
         return this.hasValidStates;
     }
 

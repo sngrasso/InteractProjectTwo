@@ -1,2 +1,10 @@
 ID,Name,State,PNGFilename,Text,x,y,visible
-0,StartGame,Intro,,Start Game,100,650,yes
+0,StartGame,Intro,,Start Game,600,375,yes
+1,HelloDialogue,,,Hello!,100,650,no
+2,Inventory,,,Inventory,100,650,yes
+3,Talk,,,Talk,250,650,no
+4,Answer1,,,Okay,500,500,no
+5,Answer2,,,Well...,800,500,no
+6,Next,,,Next,800,500,yes
+7,Done,,,Okay,500,500,no
+8,NotDone,,,Not Yet,800,500,no

@@ -1,6 +1,7 @@
 CurrentState,KeyTyped,KeyCode,MouseEvent,ClickableName,MapDirection,NextState
+Splash,,,mouseReleased,,,Intro
 Intro,,,,StartGame,,Start
-Start,,,,,E,FrontYard
+Start,a,,,,,FrontYard
 FrontYard,a,,,StartGame,,Start
 FrontYard,,,,,S,ParkEntrance
 ParkEntrance,,,,,N,FrontYard
@@ -18,8 +19,8 @@ ParkUpperRight,,,,,S,ParkLowerRight
 ParkLowerRight,,,,,N,ParkUpperRight
 ParkLowerRight,,,,,W,ParkBottom
 ParkBottom,,,,,N,ParkCenter
-ParkBottom,,,,,S,PollingPlace
 ParkBottom,,,,,W,ParkLowerLeft
 ParkBottom,,,,,E,ParkLowerRight
-PollingPlace,,,,,N,ParkBottom
+ParkBottom,,,,Done,,PollingPlace
+
 
